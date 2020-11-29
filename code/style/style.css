@@ -1,0 +1,14 @@
+body{
+    background: rgb(65, 65, 65);
+    color: rgb(202, 202, 202);
+}
+
+ul{
+    border: 1px solid red;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+li{
+    border: 1px solid blue;
+    list-style: none;
+}
