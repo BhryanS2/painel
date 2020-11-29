@@ -1,0 +1,17 @@
+{
+  "name": "APIS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "BhryanS2 <64044982+BhryanS2@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bundle": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon Server.js"
+  }
+}
