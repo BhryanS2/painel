@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <title>API</title>
 </head>
+
 <body>
     <main>
-        <!-- <form method = 'get'> -->
+        <form action="/teste" method="GET">
+            <div>
+                <h2>Pesquise o clima da sua cidade</h2>
 
-            <label>Cidade</label>
-            <input type="text" placeholder='São Paulo' id="cidade">
+                <div class="input">
+                    <input required type="text" />
+                    <label>Cidade</label>
+                </div>
 
-            <label>Estado</label>
-            <input type="text" placeholder="SP" id="estado">
 
-            <button onclick="MostarTempo()">Enviar</button>
-            
-        <!-- </form> -->
-        <ul></ul>
+                <div class="input">
+                    <input required type="text" maxlength="2" />
+                    <label>Estado</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+        <ul>
+
+        </ul>
     </main>
     <script src="./index.js"></script>
 </body>
+
 </html>
