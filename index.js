@@ -1,18 +1,17 @@
-document.querySelector('button').addEventListener("submit", MostarTempo())
+//document.querySelector('button').addEventListener("submit", MostarTempo())
+
 
 async function MostarTempo() {
-    let cidade = await document.querySelector("#cidade").value
-    let estado = await document.querySelector("#estado").value
+    let cidade =  document.querySelector("#cidade").value
+    let estado =  document.querySelector("#estado").value
     console.log(cidade, estado)
-    try {
-        const response = await fetch(`http://localhost:8000/`)
-        //console.log(response)
-        const data = await response.json()
-
-        View(data)
-    } catch (error) {
-        console.log(error)
-    }
+    const response = await fetch(`http://localhost:8000/weather/guaxupe/MG`)
+    const data = await response.json()
+    console.log(data)
+    View(data)
+    //console.log(response)
+    
+   
 }
 
 // MostarTempo()
