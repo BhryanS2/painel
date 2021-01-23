@@ -1,7 +1,9 @@
-async function MostarTempo() {
-    //let cidade = document.querySelector("#cidade").value
-    //let estado = document.querySelector("#estado").value
+document.querySelector('button').addEventListener("submit", MostarTempo())
 
+async function MostarTempo() {
+    let cidade = await document.querySelector("#cidade").value
+    let estado = await document.querySelector("#estado").value
+    console.log(cidade, estado)
     try {
         const response = await fetch(`http://localhost:8000/`)
         //console.log(response)
@@ -13,7 +15,7 @@ async function MostarTempo() {
     }
 }
 
-MostarTempo()
+// MostarTempo()
 
 function View(dias) {
     let momentoAtual = new Date()

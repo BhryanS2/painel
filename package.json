@@ -1,5 +1,5 @@
 {
-    "name": "APIS",
+    "name": "a",
     "version": "1.0.0",
     "main": "index.js",
     "author": "BhryanS2 <64044982+BhryanS2@users.noreply.github.com>",
@@ -13,6 +13,6 @@
         "nodemon": "^2.0.6"
     },
     "scripts": {
-        "start": "nodemon Server.js"
+        "start": "nodemon ./code/Server.js"
     }
 }

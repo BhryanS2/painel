@@ -5,8 +5,8 @@ const BodyParser = require('body-parser')
 
 const key = '2616f7cb'
 
-let cidade = 'new york'
-let estado = ''
+let cidade = 'Guaxupe'
+let estado = 'MG'
 
 const app = express()
 

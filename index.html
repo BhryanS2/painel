@@ -10,25 +10,26 @@
 
 <body>
     <main>
-        <form action="/teste" method="GET">
+        <form>
             <div>
                 <h2>Pesquise o clima da sua cidade</h2>
 
                 <div class="input">
-                    <input required type="text" />
+                    <input required type="text" id="cidade"/>
                     <label>Cidade</label>
                 </div>
 
 
                 <div class="input">
-                    <input required type="text" maxlength="2" />
+                    <input required type="text" maxlength="2" id='estado'/>
                     <label>Estado</label>
                 </div>
             </div>
 
             <button type="submit">Enviar</button>
-
+            <!-- <a href="/View">enviar</a> -->
         </form>
+
         <ul>
 
         </ul>
