@@ -3,10 +3,11 @@
 async function MostarTempo() {
     let cidade =  document.querySelector("#cidade").value
     let estado =  document.querySelector("#estado").value
-
+    console.log(cidade + " " + estado)
     await fetch(`https://server-tempo.herokuapp.com/weather/${cidade}/${estado}`)
     .then( async response => {
         const data = await response.json()
+        alert("sua cidade esta a procura")
         View(data)
     })
     .catch(error => {
