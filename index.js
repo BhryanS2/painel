@@ -4,7 +4,7 @@ async function MostarTempo() {
     let cidade =  document.querySelector("#cidade").value
     let estado =  document.querySelector("#estado").value
 
-    await fetch(`https://server-tempo.herokuapp.com/weather/${cidade}/${estado}`)
+    await fetch(`https://server-tempo.herokuapp.com/weather/guaxupe/mg`)
     .then( async response => {
         const data = await response.json()
         View(data)
