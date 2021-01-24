@@ -1,6 +1,7 @@
 //document.querySelector('button').addEventListener("submit", MostarTempo())
 
 async function MostarTempo() {
+    alert("entrou")
     let cidade =  document.querySelector("#cidade").value
     let estado =  document.querySelector("#estado").value
     console.log(cidade + " " + estado)
