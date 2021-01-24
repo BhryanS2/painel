@@ -1,21 +1,50 @@
 //document.querySelector('button').addEventListener("submit", MostarTempo())
 
 async function MostarTempo() {
-    let cidade =  document.querySelector("#cidade").value
-    let estado =  document.querySelector("#estado").value
-    await fetch(`https://server-tempo.herokuapp.com/weather/${cidade}/${estado}`)
+    const cidade =  document.querySelector("#cidade").value
+    const estado =  document.querySelector("#estado").value
+    // console.log('cidade do input \n'+cidade)
+
+    let city = StringTreatment(cidade)
+    // console.log('cidade da function \n'+city)
+
+    let [...citystring] = city;
+
+    let cityFinal = ''
+
+    for(letras in citystring) {
+        if(citystring[letras] == " "){
+            citystring[letras] = '%20'
+        }
+        cityFinal += citystring[letras]
+    }
+    // console.log('cidade que vai ser passada na URL \n'+cityFinal)
+
+    await fetch(`https://server-tempo.herokuapp.com/weather/${cityFinal}/${estado}`)
     .then( async response => {
         const data = await response.json()
-        View(data)
+        View(data, cidade, estado)
     })
     .catch(error => {
         alert(error)
     })
-   
+}
+
+function StringTreatment(str){
+    
+    str = str.replace(/[ÀÁÂÃÄÅ]/,"A");
+    str = str.replace(/[àáâãäå]/,"a");
+    str = str.replace(/[ÈÉÊË]/,"E");
+    str = str.replace(/[Ç]/,"C");
+    str = str.replace(/[ç]/,"c");
+    str = str.replace(/[ã]/,"a")
+    // o resto
+
+    return str 
 }
 
 // MostarTempo()
-function View(dias) {
+function View(dias, cityName, state) {
     let momentoAtual = new Date()
     let json = momentoAtual.toLocaleDateString()
     let string = json.toString()
@@ -99,7 +128,7 @@ function View(dias) {
     //console.log(dias)
 
     document.querySelector('ul').innerHTML = `
-    <h1>${dias.results.city}</h1>
+    <h1>${cityName}, ${state}</h1>
     <div class = 'card-deck m-0'>${list}</div>
     `
 }
