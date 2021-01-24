@@ -57,7 +57,7 @@ function View(dias) {
             `
         }
 
-        if (clima[dia] == 'storm' || clima[dia] == 'rain') {
+        if (clima[dia] == 'storm') {
             list += `
                 <img src="./img/chuva.svg">
             </div> 
@@ -76,6 +76,11 @@ function View(dias) {
             list += `
                 <img src="./img/nublado.svg">
             </div>
+            `
+        } else if (clima[dia] == 'rain') {
+            list += `
+                <img src="./img/tempestade.svg">
+            </div> 
             `
         } else {
             list += `</div>`
