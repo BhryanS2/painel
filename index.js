@@ -1,21 +1,21 @@
 //document.querySelector('button').addEventListener("submit", MostarTempo())
 
-
 async function MostarTempo() {
     let cidade =  document.querySelector("#cidade").value
     let estado =  document.querySelector("#estado").value
-    console.log(cidade, estado)
-    const response = await fetch(`http://localhost:8000/weather/guaxupe/MG`)
-    const data = await response.json()
-    console.log(data)
-    View(data)
-    //console.log(response)
-    
+
+    await fetch(`http://localhost:8000/weather/${cidade}/${estado}`)
+    .then( async response => {
+        const data = await response.json()
+        View(data)
+    })
+    .catch(error => {
+        alert(error)
+    })
    
 }
 
 // MostarTempo()
-
 function View(dias) {
     let momentoAtual = new Date()
     let json = momentoAtual.toLocaleDateString()
@@ -99,3 +99,4 @@ function View(dias) {
     <div class = 'card-deck m-0'>${list}</div>
     `
 }
+

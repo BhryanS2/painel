@@ -24,7 +24,7 @@ body {
     color: #f0f0f5;
 }
 
-form {
+.form {
     background: rgba(255, 255, 255, 0.03);
     width: 100%;
     max-width: 800px;
@@ -33,7 +33,7 @@ form {
     display: block;
 }
 
-form h2 {
+.form h2 {
     margin-bottom: 32px;
 }
 
@@ -79,7 +79,7 @@ input:focus~label, input:valid~label {
     letter-spacing: 0.1em;
 }
 
-/*formatação da busca na APi*/
+/*.formatação da busca na APi*/
 
 li {
     list-style: none;
