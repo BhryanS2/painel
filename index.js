@@ -121,7 +121,7 @@ function View(dias, cityName, state) {
                 <span>Máxima: <span class='max'>${max[dia]}°C</span></span>
                 <span>Mínima: <span class='min'> ${min[dia]}°C</span></span>
             </div>
-            <div class='dia'>Dia da semana: ${weekday[dia]}</div><br>
+            <div class='dia'>Dia da semana: ${weekday[dia]}</div>
         </li>
         `
     }

@@ -2,7 +2,7 @@
     --primary-color: #009e22;
     --bg-color: #130f0d;
     --text-color: #f0f0f5;
-    --light-color: rgba(255, 255, 255, 0.04);
+    --light-color: #1f1c1a;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
 }
 
 .form {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--light-color);
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -47,7 +47,7 @@ input, button {
     padding: 16px 0;
     border: none;
     border-bottom: 1px solid var(--primary-color);
-    background-color: transparent;
+    background: none;
     outline: none;
     /* text */
     color: var(--text-color);
@@ -64,6 +64,14 @@ button {
 button:hover {
     transform: scale(1.05);
 }
+
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--light-color) inset;
+   -webkit-text-fill-color: white;
+}
+
 
 input~label {
     position: absolute;
@@ -148,7 +156,7 @@ ul li div:first-child {
     }
     .descricao {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .card0 {
         grid-column-start: 1;
