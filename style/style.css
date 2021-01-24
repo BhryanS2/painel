@@ -70,13 +70,12 @@ button:hover {
     transform: scale(1.05);
 }
 
-
 /* Cor de fundo do autocomplete */
+
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px var(--light-color) inset;
-   -webkit-text-fill-color: white;
+    -webkit-text-fill-color: white;
 }
-
 
 input~label {
     position: absolute;
@@ -167,15 +166,12 @@ ul li div:first-child {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
-    .temp{
+    .temp {
         padding: 1rem 0 0 0;
     }
-
-    .temp span{
+    .temp span {
         padding: 1rem 0 0 0;
     }
-
     .data {
         padding: 1.2rem 0 0.9rem 0;
     }
