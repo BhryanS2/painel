@@ -42,6 +42,11 @@ div.input {
     position: relative;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 input, button {
     width: 100%;
     padding: 16px 0;
