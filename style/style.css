@@ -146,6 +146,10 @@ ul li div:first-child {
     text-align: center;
 }
 
+.cloud-IMG {
+    margin-left: 1rem;
+}
+
 @media (min-width: 900px) {
     .card-deck {
         height: 100vh;

@@ -93,7 +93,7 @@ function View(dias, cityName, state) {
             `
         }else if (clima[dia] == 'cloud') {
             list += `
-                <img src="./img/nuvem.svg">
+                <img src="./img/nuvem.svg" class='cloud-IMG'>
             </div> 
             `
         }else if (clima[dia] == 'clear_day') {
