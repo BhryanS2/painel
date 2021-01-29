@@ -53,7 +53,7 @@ function View(dias, cityName, state) {
     let day = string.shift()
     let month = string.shift()
     let comparation = `${day}/${month}`
-    // console.log(comparation)
+    console.log(comparation)
 
     let list = ''
     let clima = []

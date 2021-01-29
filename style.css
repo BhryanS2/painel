@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #009e22;
+  --bg-color: #130f0d;
+  --text-color: #f0f0f5;
+  --light-color: #1f1c1a;
+  --secundary-color: #432ff3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 25vw;
+  padding: 16px 0;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  transition: 1s;
+  max-width: 300px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+a:first-child button {
+  margin-right: 2rem;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.game {
+  background-color: var(--secundary-color);
+}
+
+.climate {
+  background-color: var(--primary-color);
+}

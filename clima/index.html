@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>API</title>
+</head>
+
+<body>
+  <main>
+    <div class="form">
+      <div>
+        <h2>Pesquise o clima da sua cidade</h2>
+
+        <div class="input">
+          <input required type="text" id="cidade" />
+          <label>Cidade</label>
+        </div>
+
+
+        <div class="input">
+          <input required type="text" maxlength="2" id='estado' />
+          <label>Estado</label>
+        </div>
+      </div>
+      <div class='button-container'>
+        <button onclick=" MostarTempo()">Enviar</button>
+      </div>
+    </div>
+
+    <ul>
+
+    </ul>
+  </main>
+  <script src='./index.js'></script>
+</body>
+
+</html>
