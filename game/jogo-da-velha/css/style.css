@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #04D361;
+  --bg-color: #1f1c1a;
+  --text-color: #f0f0f5;
+  --game-bg-color: #0a1d27;
+  --border-color: #22343c;
+  --secundary-color: #551adf;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.game {
+  width: 100vw;
+  height: 100vw;
+  margin: 0 auto;
+  background-color: var(--game-bg-color);
+  color: #fff;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr)
+}
+
+.game > div {
+  border: 6px solid var(--border-color);
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 20%;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  outline: none;
+  /* text */
+  color: var(--text-color);
+  font-size: 1em;
+  background-color: var(--secundary-color);
+}
+.btn:hover{
+  transform: scale(1.05) ;
+}
+
+.game > div.winner {
+  background: var(--primary-color);
+}
+
+@media (min-width: 600px) {
+  .game {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    border: 6px solid var(--border-color);
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    cursor: pointer
+  }
+}

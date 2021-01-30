@@ -32,6 +32,10 @@ button{
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:first-child button {
   margin-right: 2rem;
 }
@@ -40,10 +44,20 @@ button:hover {
   transform: scale(1.05);
 }
 
-.game {
+.jogo_da_velha {
   background-color: var(--secundary-color);
 }
 
-.climate {
+.among {
   background-color: var(--primary-color);
+}
+
+.img_velha {
+  margin-left: 1rem;
+}
+
+.jogo_da_velha, .among {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
