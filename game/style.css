@@ -52,6 +52,10 @@ button:hover {
   background-color: var(--primary-color);
 }
 
+.jogo_da_velha, .among {
+  max-height: 4rem;
+}
+
 .img_velha {
   margin-left: 1rem;
 }
