@@ -85,36 +85,33 @@ function View(dias, cityName, state) {
       `
     }
 
-    switch (clima[dia]) {
-      case 'storm':
-        list += `
+    if (clima[dia] == 'storm') {
+      list += `
           <img src="./img/chuva.svg">
-        </div>`
-        break;
-
-      case 'cloud':
-        list += `
+      </div>
+      `
+    } else if (clima[dia] == 'cloud') {
+      list += `
           <img src="./img/nuvem.svg" class='cloud-IMG'>
-        </div>`
-        break;
-
-      case 'clear_day':
-        list += `
+      </div>
+      `
+    } else if (clima[dia] == 'clear_day') {
+      list += `
           <img src="./img/sol.svg">
-        </div>`
-        break;
-
-      case 'cloudly_day':
-        list += `
+      </div>
+      `
+    } else if (clima[dia] === 'cloudly_day') {
+      list += `
           <img src="./img/nublado.svg">
-        </div>`
-      case 'rain':
-        list += `
+      </div>
+      `
+    } else if (clima[dia] == 'rain') {
+      list += `
           <img src="./img/tempestade.svg">
-        </div>`
-      default:
-        list += `</div>`
-        break;
+      </div>
+      `
+    } else {
+      list += `</div>`
     }
 
     list += `
