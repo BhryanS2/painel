@@ -35,6 +35,22 @@ a {
   color: var(--link);
 }
 
+.back button{
+  width: 20vw;
+  font-size: 1rem;
+  background: #5b3599;
+  color: #fff;
+  padding: 16px 0;
+  border: none;
+  outline: none;
+  margin: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.back button:hover{
+  transform: scale(1.05);
+}
 /*section game*/
 
 .game {

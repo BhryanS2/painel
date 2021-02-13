@@ -224,6 +224,27 @@ h1 {
   font-size: 3rem;
 }
 
+/*voltar*/
+.button_back button{
+  width: 10vw;
+  padding: 6px 0;
+  background: rgba(91, 53, 153, 0.502);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.button_back button:hover {
+  background: rgb(91, 53, 153);
+  transform: scale(1.05);
+}
+
+
+a.button_back {
+  text-decoration: none;
+}
+
 @keyframes errorLed {
   to {
     border: solid 5px #202020;
