@@ -1,0 +1,46 @@
+:root {
+  --background: #000000d5;
+  --text: #8d8d8dd5;
+  --link: #432ff3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+}
+
+/*title*/
+
+h1 {
+  text-align: center;
+  color: var(--text);
+}
+
+/*back*/
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem 0;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+/*section game*/
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

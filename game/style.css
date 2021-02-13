@@ -6,7 +6,7 @@
   --secundary-color: #432ff3;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -15,53 +15,75 @@ main {
   background-color: var(--bg-color);
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-button{
-  width: 25vw;
+/*section game*/
+
+.games {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+/*  buttons */
+
+button {
+  width: min(25vw, 300px);
   padding: 16px 0;
   border: none;
   outline: none;
   font-size: 1em;
   transition: 1s;
-  max-width: 300px;
   color: var(--text-color);
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:first-child button {
-  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
   transform: scale(1.05);
 }
 
-.jogo_da_velha {
+/*links*/
+
+a {
+  text-decoration: none;
+}
+
+/*colors*/
+
+.purple {
   background-color: var(--secundary-color);
 }
 
-.among {
+.green {
   background-color: var(--primary-color);
 }
 
-.jogo_da_velha, .among {
-  max-height: 4rem;
-}
+/*imagens*/
 
-.img_velha {
+.image {
+  width: 48px;
+  height: 48px;
   margin-left: 1rem;
 }
 
-.jogo_da_velha, .among {
+.m-0 {
+  margin-left: 0;
+}
+
+.m-2 {
+  margin-left: 2rem;
+}
+
+/*back*/
+.back{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.back button{
+  background: #5b3599;
 }

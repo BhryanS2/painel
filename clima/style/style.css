@@ -150,6 +150,23 @@ ul li div:first-child {
   margin-left: 1rem;
 }
 
+/*voltar*/
+a {
+  text-decoration: none;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.back button{
+  background: #5b3599;
+  border: none;
+}
+
+
 @media (min-width: 900px) {
   .card-deck {
     height: 100vh;
