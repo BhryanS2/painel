@@ -96,7 +96,6 @@ const Search = {
             return Res
         })
         .catch(e => {
-          alert(e)
           throw new Error('Não foi possivel fazer a busca')
         })
       return result
@@ -243,6 +242,7 @@ async function init(cidade, estado) {
     RenderInScreen.MostarTempo(data, cidade, estado)
     RenderInScreen.setlaoding(false)
   } catch (error) {
+    RenderInScreen.setlaoding(false)
     alert(error.message)
   }
 }
