@@ -1,0 +1,24 @@
+.back, .button_back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  height: 1.5rem;
+  text-decoration: none;
+}
+
+.back button, .button_back button, .button_back button:hover{
+  background: #432ff3;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  width: 20vw;
+  padding: 16px 0;
+}
+
+.button_back button, .button_back button:hover{
+  font-size: 2rem;
+  font-weight: normal;
+  width: 20vw;
+}
