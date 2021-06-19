@@ -106,19 +106,19 @@ const Search = {
 
 const setClimate = {
   storm() {
-    return `<img src="./img/chuva.svg">`
+    return `<img src="./svg/Chuva.svg">`
   },
   cloud() {
-    return `<img src="./img/nuvem.svg" class="cloud-IMG" />`
+    return `<img src="./svg/Nuvem.svg" class="cloud-IMG" />`
   },
   clear_day() {
-    return `<img src="./img/sol.svg">`
+    return `<img src="./svg/Sol.svg">`
   },
   cloudly_day() {
-    return `<img src="./img/nublado.svg">`
+    return `<img src="./svg/Nublado.svg">`
   },
   rain() {
-    return `<img src="./img/tempestade.svg">`
+    return `<img src="./svg/Tempestade.svg">`
   },
 }
 
@@ -130,7 +130,7 @@ const RenderInScreen = {
           <li class="card0">
               <div class="data">carregando...</div>
               <div class="descricao">carregando...
-                  <img src="./img/Loading.svg">
+                  <img src="./svg/Loading.svg">
               </div>
 
               <div class="temp">
@@ -142,7 +142,7 @@ const RenderInScreen = {
           <li class="card1">
               <div class="data">Dia:carregando...</div>
               <div class="descricao">carregando...
-                  <img src="./img/Loading.svg">
+                  <img src="./svg/Loading.svg">
               </div>
 
               <div class="temp">
@@ -155,7 +155,7 @@ const RenderInScreen = {
               <div class="data">Dia:carregando...</div>
               <div class="descricao">carregando...
 
-                  <img src="./img/Loading.svg">
+                  <img src="./svg/Loading.svg">
               </div>
 
               <div class="temp">
@@ -167,7 +167,7 @@ const RenderInScreen = {
           <li class="card3">
               <div class="data">Dia:carregando...</div>
               <div class="descricao"> Parcialmente nublado
-                  <img src="./img/Loading.svg">
+                  <img src="./svg/Loading.svg">
               </div>
               <div class="temp">
                   <span>Máxima: <span class="max">carregando...°C</span></span>
@@ -179,7 +179,7 @@ const RenderInScreen = {
               <div class="data">Dia:carregando...</div>
               <div class="descricao"> Parcialmente nublado
 
-                  <img src="./img/Loading.svg">
+                  <img src="./svg/Loading.svg">
               </div>
               <div class="temp">
                   <span>Máxima: <span class="max">carregando...°C</span></span>
